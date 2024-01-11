@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block und Inline Elemente</title>
+    <style>
+        body{
+            background-color: rgb(76, 139, 130);
+        }
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 30px;
+        }
+        .links{
+            font-size: 30px;
+            color: rgb(149, 48, 25);
+            text-decoration: none;
+        }
+        div{
+            background-color: aquamarine;
+        }
+        #span1{
+            color: brown;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>    
+    <a href="001 ErsteSchritte.html" class="links">- Zurück zu ErsteSchritte</a><br>
+    <h1>Block und Inline Elemente</h1>
+    <h3>Block-Elemente:</h3><!--Nimmt die gesamte Zeile -->
+    <div id="blockelementOne" class="div">
+        <p>Ich bin ein Blocklevel-Element</p>
+        <p>Ich bin ein Blocklevel-Element</p>
+    </div>
+
+    <h3>Inline-Elemente:</h3><!--Nimmt NUR soviel Platz wie der Inhalt benötigt-->
+    <div id="inlineelementOne" class="div">
+        <span id="span1">Ich bin ein Inline-Element</span>
+        <span>Ich bin ein Inline-Element</span>
+    </div>
+</body>
+</html>
