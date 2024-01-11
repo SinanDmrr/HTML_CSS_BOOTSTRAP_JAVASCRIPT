@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen</title>
+    <style>
+        body{
+            background-color: rgb(53, 128, 123);
+        }
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .links{
+            font-size: 30px;
+            color: rgb(122, 35, 35);
+            text-decoration: none;
+        }
+        #listdesign{
+            list-style-type: georgian;
+        }
+        #listdesign ul{
+            list-style-type: square;
+        }
+    </style>
+</head>
+<body>
+    <a href="001 ErsteSchritte.html" class="links">Zurück zu Erste Schritte in HTML</a>   
+    <hr>
+    <h1>Listen</h1>
+    <p>Ungeordnete Liste</p> <!--Mit Aufzählungspunkten ohne Zahlenreihenfolge-->
+    <ul>
+        <li>Name</li>
+        <li>Alter</li>
+        <li>
+            Anschrift
+            <ul>
+                <li>Straße</li>
+                <li>Hausnummer</li>
+                <li>PLZ</li>
+                <li>Ort</li>
+            </ul>
+        </li>
+    </ul>
+    <p>Geordnete Liste</p> <!--Mit Zahlenreihenfolge-->
+    <ol>
+        <li>
+            Obst
+            <ol>
+                <li>Apfel</li>
+                <li>Banane</li>
+            </ol>
+        </li>
+        <li>
+            Gemüse
+            <ol>
+                <li>Kürbis</li>
+                <li>Tomate</li>
+            </ol>
+        </li>
+    </ol>
+    <p>Gemischte Liste</p> <!--Mit Zahlenreihenfolge UND Aufzählungspunkten-->
+    <ol>
+        <li>
+            Obst
+            <ul>
+                <li>Apfel</li>
+                <li>Banane</li>
+            </ul>
+        </li>
+        <li>
+            Gemüse
+            <ul>
+                <li>Kürbis</li>
+                <li>Tomate</li>
+            </ul>
+        </li>
+    </ol>
+    <p>Ungeordnete Liste Aufzählungspunkt Design ändern</p> <!--Mit Aufzählungspunkten aussehen ändern-->
+    <ul id="listdesign">
+        <li>Name</li>
+        <li>Alter</li>
+        <li>
+            Anschrift
+            <ul>
+                <li>Straße</li>
+                <li>Hausnummer</li>
+                <li>PLZ</li>
+                <li>Ort</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
