@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class & ID</title>
+    <style>
+        body{
+            background-color: rgb(79, 72, 74);
+        }
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .links{
+            font-size: 30px;
+            color: rgb(13, 134, 255);
+            text-decoration: none;
+        }
+        #bold{
+            font-weight: bold;
+        }
+        #italic{
+            font-style: italic;
+        }
+        #unterlineAndRed{
+            text-decoration: underline;
+        }
+        .roteSchrift{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <a href="001 ErsteSchritte.html" class="links">Zurück zu Erste Schritte in HTML</a>   
+    <hr>
+    <h1>Class & ID</h1>
+    <h3>Class:</h3><!--Class sind Gruppen für die das gleiche gilt-->
+    <p class="roteSchrift">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="roteSchrift">Lorem ipsum dolor sit amet consectetur.</p>
+    <h3>ID:</h3><!--IDs sind EINZIGARTIG-->
+    <p id="bold">Lorem ipsum dolor sit amet consectetur.</p>
+    <p id="italic">Lorem ipsum dolor sit amet consectetur.</p>
+    <h3>Class & ID:</h3><!--Eigene ID + in der Class "roteSchrift"-->
+    <p id="unterlineAndRed" class="roteSchrift">Lorem ipsum dolor sit amet consectetur.</p>
+</body>
+</html>
