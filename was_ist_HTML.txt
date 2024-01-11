@@ -1,0 +1,20 @@
+Was ist HTML?
+Per Definition versteht man unter HTML eine einheitliche, textbasierte Auszeichnungssprache. Sie besteht aus einfachen Auszeichnungselementen, 
+den sogenannten „Tags“ als auch inhaltsleeren Elementen wie etwa <br>. HTML steht als Abkürzung für „Hypertext Markup Language“. 
+Sie macht Browsern eine Interpretation und Anzeige sowie das Verknüpfen von Webseiten möglich. 
+Im aktuellen Standard nutzt man XHTML und HTML 5 um insbesondere Suchmaschinen-optimierte und User-orientierte Webseiten mit allen nötigen Elementen zu erstellen. 
+Auch das responsive Design und verschiedene Auszeichnungen innerhalb des Codes sind relevant für das Suchmaschinenranking.
+
+Wer hat HTML erfunden?
+Die Hypertext Markup Language entstand, weil sich Wissenschaftler in dem Zeitraum der beginnenden Digitalisierung miteinander über Ihre Forschungen verständigen wollten. 
+Inhalte aus wissenschaftlichen Arbeiten sollten aufeinander verweisen können und die jeweiligen textlichen Auszeichnungen, wie etwa Überschriften oder Formatierungen, 
+gleichbleibend übergeben werden. Auf der Basis dieses Gedankens wurde am 13. März 1989 von Tim Berners-Lee am CERN in Genf HTML vorgeschlagen. 
+Durch dieses einfache Mittel waren Institut- und sogar Länderübergreifende Verweise auf andere Publikationen in andere Dokumente möglich. Die Grundlagen des World Wide Web waren gelegt. 
+Innerhalb kürzester Zeit wurde die Hypertext Markup Language die Standardsprache für Webseiten im Internet.
+
+Wofür steht die Abkürzung HTML?
+Die Abkürzung HTML steht für die englische Definition „Hypertext Markup Language“, in Deutsch etwa „Hypertext Auszeichnungssprache“. 
+Damit beschreibt die Abkürzung genau auch die ursprüngliche Intention hinter Berners-Lee Erfindung. Es ging um die einheitliche Kennzeichnung bzw. 
+Auszeichnung von Textdokumenten um einen besseren Austausch der Erkenntnisse von Wissenschaftlern aus aller Welt zu ermöglichen. 
+Zudem erfand Berners-Lee noch die Möglichkeit der Referenzierung mittels sogenannter „Links“ – also Verknüpfungen zu anderen Dokumenten.
+
