@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border CSS</title>
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        font-weight: 700;
+    }
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    p{
+        margin-bottom: 0px;
+    }
+    p.solid{
+        display: inline-block; /*Macht es zu einem Inline-Block-> Rahmen so Breit wie P*/
+        padding: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(85, 152, 85);
+        border-radius: 15px;
+    }
+    p.dashed{
+        display: inline-block; /*Macht es zu einem Inline-Block-> Rahmen so Breit wie P*/
+        padding: 5px;
+        border-style: dashed;
+        border-width: 2px;
+        border-color: rgb(31, 80, 240);
+        border-radius: 5px;
+    }
+    p.dotted{
+        display: inline-block; /*Macht es zu einem Inline-Block-> Rahmen so Breit wie P*/
+        padding: 5px;
+        border-style: dotted;
+        border-width: 2px;
+        border-color: rgb(238, 82, 25);
+        border-radius: 10px;
+    }
+    p.inset{
+        display: inline-block; /*Macht es zu einem Inline-Block-> Rahmen so Breit wie P*/
+        padding: 5px;
+        border-style: inset;
+        border-width: 5px;
+        border-color: rgb(40, 37, 36);
+        border-radius: 20px;
+    }
+    p.outset{
+        display: inline-block; /*Macht es zu einem Inline-Block-> Rahmen so Breit wie P*/
+        padding: 5px;
+        border-style: outset;
+        border-width: 5px;
+        border-color: rgb(40, 37, 36);
+        border-radius: 20px;
+    }
+    p.outset{
+        display: inline-block; /*Macht es zu einem Inline-Block-> Rahmen so Breit wie P*/
+        padding: 5px;
+        border-style: outset;
+        border-width: 5px;
+        border-color: rgb(40, 37, 36);
+        border-radius: 20px;
+    }
+    p.mixed{
+        display: inline-block; /*Macht es zu einem Inline-Block-> Rahmen so Breit wie P*/
+        padding: 5px;
+        border-style: dotted solid;
+        border-width: 5px;
+        border-color: rgb(54, 125, 61);
+        border-radius: 5px;
+    }
+    p.short{
+        display: inline-block; /*Macht es zu einem Inline-Block-> Rahmen so Breit wie P*/
+        padding: 5px;
+        border:5px double mediumorchid
+    }
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Border / Rahmen in CSS</h1>   
+
+    <div>
+        <p>Solid Border:</p>
+        <p class="solid">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Dashed Border:</p>
+        <p class="dashed">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Dotted Border:</p>
+        <p class="dotted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Inset Border:</p>
+        <p class="inset">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Outset Border:</p>
+        <p class="outset">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <hr>
+    <div>
+        <p>Mixed Border:</p>
+        <p class="mixed">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <div>
+        <p>Short Border:</p>
+        <p class="short">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>
