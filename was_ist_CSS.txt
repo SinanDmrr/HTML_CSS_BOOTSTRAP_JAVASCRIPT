@@ -1,0 +1,9 @@
+Was ist CSS?
+1. CSS ist eine Gestalungs und Formatierungssprache, deshalbt ist sie keine PROGRAMMIERSPRACHE
+2. Sie greift auf das HTML DOM (Document Object Model) zu und kann dessen Elemente im Aussehen verändern
+3. CSS bedeutet: Cascading Style Sheets
+4. CSS existiert seit 1997 und wird kontinuierlich weiter entwickelt
+5. CSS zählt wie HTML zu den grundlegenden Sprachen bei Webdesign und Layout
+6. Mit CSS können Websites responsiv und somit für viele Geräte gleichzeitig verfügbar gemacht werden
+7. Weiterer Vorteil ist das man das Design vom Inhalt trennen
+8. Der Erfinder von CSS ist Hakon Wium Lie

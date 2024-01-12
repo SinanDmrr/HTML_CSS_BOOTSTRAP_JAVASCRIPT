@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farben in CSS</title>
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        font-weight: 700;
+    }
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    #rgbRot{
+        background-color: rgb(255, 0, 0);
+    }
+    #rgbGruen{
+        background-color: rgb(0, 255, 0);
+    }
+    #rgbBlau{
+        background-color: rgb(0, 0, 255);
+        color: white;
+    }
+    #rgbaRot{
+        background-color: rgba(255, 0, 0, 25%);
+    }
+    #rgbaGruen{
+        background-color: rgba(0, 255, 0, 25%);
+    }
+    #rgbaBlau{
+        background-color: rgba(0, 0, 255, 25%);
+        color: white;
+    }    
+    #hexRot{
+        background-color: #FF0000;
+    }
+    #hexGruen{
+        background-color: #00FF00;
+    }
+    #hexBlau{
+        background-color: #0000FF;
+        color: white;
+    }    
+    #hslRot{
+        background-color: hsl(0, 100%, 50%);
+    }
+    #hslGruen{
+        background-color: hsl(120, 100%, 50%);
+    }
+    #hslBlau{
+        background-color: hsl(240, 100%, 50%);
+        color: white;
+    }    
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Farben in CSS</h1>   
+
+    <div>
+        <h3>Hexadezimal: Rot-Wert, Grün-Wert, Blau-Wert</h3>
+        <p>Info: Werte von 0-9 und dann A-F (Insagesamt 15)</p>
+        <p id="rgbRot">Rot: 255 | 0 | 0</p>
+        <p id="rgbGruen">Grün: 0 | 255 | 0</p>
+        <p id="rgbBlau">Blau: 0 | 0 | 255</p>
+    </div>
+    <hr>
+
+    <div>
+        <h3>RGBA: Rot-Wert, Grün-Wert, Blau-Wert, Alpha-Wert</h3>
+        <p>Info: Werte von 0 bis 255 & Deckkraft/Transparenz 0% bis 100%</p>
+        <p id="rgbaRot">Rot: 255 | 0 | 0 | 25%</p>
+        <p id="rgbaGruen">Grün: 0 | 255 | 0 | 25%</p>
+        <p id="rgbaBlau">Blau: 0 | 0 | 255 | 25%</p>
+    </div>
+    <hr>
+    <div>
+        <h3>HEX: Rot-Wert, Grün-Wert, Blau-Wert</h3>
+        <p>Info: Werte von 0 bis 255 & Deckkraft/Transparenz 0% bis 100%</p>
+        <p id="hexRot">Rot:# FF | 00 | 00</p>
+        <p id="hexGruen">Grün:# 00 | FF | 00</p>
+        <p id="hexBlau">Blau:# 00 | 00 | FF</p>
+    </div>
+    <hr>
+
+    <div>
+        <h3>HSL: Hue (Farbton), Saturation (Sättigung), Lightness (Helligkeit)</h3>
+        <p>Info: Hue-Werte von 0 bis 360 und die anderen 0% bis 100%</p>
+        <p id="hslRot">Rot: 250| 100% | 50%</p>
+        <p id="hslGruen">Grün: 250| 100% | 50%</p>
+        <p id="hslBlau">Blau: 250| 100% | 50%</p>
+    </div>
+    <hr>
+</body>
+</html>
