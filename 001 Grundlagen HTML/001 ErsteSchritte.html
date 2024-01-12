@@ -6,23 +6,40 @@
     <title>Erste Schritte in HTML</title>
     <style>
         body{
-            background-color: rgb(118, 88, 52);            
+            background-color: rgb(224, 224, 224);            
         }
         h1{
             font-size: 60px;
+        }
+        h2{
+            font-size: 40px;
         }
         p{
             font-size: 20px;
         }
         .Links{
             font-size: 30px;
-            color: lightslategray;
+            color: rgb(0, 128, 255);
             text-decoration: none;
+        }
+        #seiteninfo{
+            font-size: 30px;
+            font-weight: 700;
         }
     </style>
 </head>
-<body>
+<body>    
     <h1>HTML Erste Schritte</h1><!--H1 immer nur 1xPro Webseite nutzen, wegen dem Google Chrowler-->
+    <p id="seiteninfo">Willkommen auf meiner Seite indem ich Informationen zu<br>
+                             HTML, CSS, JavaScript, Bootstrap aufliste.</p>
+    <hr>
+    <p>        
+        <b>Was sind Inline Elemente?</b><br>
+        Diese Elemente werden verwendet, um den Text innerhalb eines Abschnitts<br>
+        zu formatieren oder bestimmte Teile des Textes hervorzuheben, ohne eine <br>
+        neue Zeile zu beginnen.
+    </p>
+    <p><b>Beispiele:</b></p>
     <p>Fett/Bold: Lorem ipsum <b>dolor sit amet</b>, consectetur</p>
     <p>Kursiv/Italic: Lorem ipsum <i>dolor sit amet</i>, consectetur</p>
     <p>Markiert: Lorem ipsum <mark>dolor sit amet</mark>, consectetur</p>
@@ -34,7 +51,7 @@
     <p>Strong: Lorem ipsum <strong>dolor sit amet</strong>, consectetur</p>
     <!--Strong ist Behindertenfreundlich da der Browser Reader das dann auch betont bei Bold nicht nur Visuell-->
     <hr>   
-    <h2>Hier geht es zu den weiteren Schritten:</h2>
+    <h2>Hier geht es zu den weiteren HTML Schritten:</h2>
     <a href="002 Links.html" class="Links">- Links</a><br>
     <a href="003 Listen.html" class="Links">- Listen</a><br>
     <a href="004 Bilder.html" class="Links">- Bilder</a><br>
@@ -42,6 +59,7 @@
     <a href="006 Block und Inline Elemente.html" class="Links">- Block & Inline</a><br>
     <a href="007 Class & ID.html" class="Links">- Class & ID</a><br>
     <a href="008 iFrame.html" class="Links">- iFrame</a><br>
+    <a href="009 Formulare.html" class="Links">- Formulare</a><br>
     <hr>
 </body>
 </html>

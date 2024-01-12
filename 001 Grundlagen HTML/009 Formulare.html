@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulare</title>
+    <style>
+        body{
+            background-color: rgb(224, 224, 224);
+        }
+        h1{
+            font-size: 60px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .Links{
+            font-size: 30px;
+            color: rgb(91, 142, 36);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>    
+    <a href="001 ErsteSchritte.html" class="Links">- Zurück zu 001 Erste Schritte</a><br>
+    <h1>Formulare</h1>
+    <!--Default method="get" NICHT NIEMALS NUTZEN mit GET werden die Informationen über die
+        URL an den Server übergeben wodurch diese wie z.B. Passwort usw. sichtbar sind
+        NUTZ FOLGENDES: method="post" diese werden -->
+    <form method="post">   
+        <!--Da DIVs Block-Elemente sind erstellt jedes Div eine neue Zeile andernfalls
+            würden alle Inputs hintereinander in einer Zeile stehen-->     
+        <div>
+            <!--Label for nimmt die ide vom Textfeld an wozu es gehört-->
+            <label for="firstname">Vorname: </label>
+            <!--name wird benötit um mit php usw. das Feld anzusprechen-->
+            <input type="text" id="firstname" name="firstname">
+        </div>
+
+        <div>
+            <label for="lastname">Nachname: </label>
+            <input type="text" id="lastname" name="lastname">
+        </div>
+
+        <div>
+            <label for="age">Alter: </label>
+            <input type="number" id="age" name="age">        
+        </div>
+
+        <p><strong>Geschlecht:</strong></p>
+        <!--Name von Radiobuttons müssen gleich sein ansonsten sind alle markierbar man möchte
+            aber nur das einer aus der Auswahl markiert ist entweder Male OR Female-->
+        <div>
+            <label for="male">Männlich</label>
+            <input type="radio" name="sex" id="male">
+        </div>
+
+        <div>
+            <label for="female">Weiblich</label>
+            <input type="radio" name="sex" id="female">
+        </div>
+
+        <div>
+            <label for="password">Passwort: </label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div>
+            <label for="date">Datum: </label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <p><strong>Colorpicker:</strong></p>
+        <div>
+            <label for="color">Color:</label>
+            <input type="color" name="color" id="color">
+        </div>
+
+        <div>
+            <!--Email muss @ beinhalten sonst gibts fehler beim übergeben-->
+            <label for="email">E-Mail:</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <!--Hidden Input für später AJAX usw.
+            Hidden nehmen kein Platz auf der Seite,
+            weil ist hidden-->
+        <div>
+            <input type="hidden" name="elementid" value="Geheime Infos">
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <form method=post>
+        <!--Dateipicker / Datei hochladen-->
+        <input type="file">
+        <button type="submit">Submit</button>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+</body>
+</html>
