@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paddings in CSS</title>
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    div{
+        border-style: solid;
+        border-color: black;
+        display: inline-block;
+    }
+    .farbverlauf{
+        border-style: solid;
+        border-color: brown;
+        width: 250px;
+        height: auto;
+        padding: 0px;
+    }
+    .farbverlaufPadding15px{
+        border-style: solid;
+        border-color: brown;
+        width: 250px;
+        height: auto;
+
+        padding: 15px;
+    }
+    .farbverlaufPaddingLeft{
+        border-style: solid;
+        border-color: brown;
+        width: 250px;
+        height: auto;
+
+        padding-left: 15px;
+    }
+    .farbverlaufPaddingRight{
+        border-style: solid;
+        border-color: brown;
+        width: 250px;
+        height: auto;
+
+        padding-right: 15px;
+    }
+    .farbverlaufPaddingTop{
+        border-style: solid;
+        border-color: brown;
+        width: 250px;
+        height: auto;
+
+        padding-top: 15px;
+    }
+    .farbverlaufPaddingBottom{
+        border-style: solid;
+        border-color: brown;
+        width: 250px;
+        height: auto;
+
+        padding-bottom: 15px;
+    }
+    
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Padding in CSS</h1>   
+
+    <p>ohne Padding</p>
+    <div>        
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlauf" >
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlauf" >
+        <br>
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlauf" >
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlauf" >
+    </div>
+    <p>padding: 15px</p>
+    <div>        
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPadding15px">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPadding15px">
+        <br>
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPadding15px">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPadding15px">
+    </div>
+    <p>padding-left: 15px</p>
+    <div>        
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingLeft">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingLeft">
+        <br>
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingLeft">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingLeft">
+    </div>
+    <p>padding-Right: 15px</p>
+    <div>        
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingRight">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingRight">
+        <br>
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingRight">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingRight">
+    </div>
+    <p>padding-Top: 15px</p>
+    <div>        
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingTop">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingTop">
+        <br>
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingTop">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingTop">
+    </div>
+    <p>padding-Bottom: 15px</p>
+    <div>        
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingBottom">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingBottom">
+        <br>
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingBottom">
+        <img src="Bilder/farbverlauf.jpg" alt="farbverlauf" class="farbverlaufPaddingBottom">
+    </div>
+</body>
+</html>
