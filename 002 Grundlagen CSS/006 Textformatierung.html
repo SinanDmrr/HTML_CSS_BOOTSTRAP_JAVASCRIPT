@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textformatierung</title>
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        font-weight: 700;
+    }
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    p{
+        border-style: solid;
+    }
+    .color{
+        color: cadetblue;
+    }
+    .ta{
+        /*text-align: 
+        left = Standardmäßig linksbündig
+        right = Rechtsbündig
+        center = Mittig
+        justify = Blocksatz*/
+        text-align: justify;
+    }
+    .td{
+        /*text-decoration: underline -> Unterstrichen usw.*/
+        text-decoration: line-through;
+    }
+    .transform{
+        /*Ganzen Text in Groß, Klein, Erster Buchstabe Groß usw.*/
+        text-transform: uppercase;
+    }
+    .indent{
+        /*Versatz der ersten Zeile um X px*/
+        text-indent: 50px;
+    }
+    .spacing{
+        /*Abstand zwischen Buchstaben
+        word-spacing: 10px jedes Wort mit abstand*/
+        letter-spacing: 10px;
+    }
+    .lineheight{
+        /*Absatzgröße zwischen den Zeilen*/
+        line-height: 40px;
+    }
+    .shadow{
+        /*
+        1. Versatz nach Rechts
+        2. Versatz nach Unten
+        3. Blur
+        4. Farbe und Transparenz
+        */
+        text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Textformatierung</h1>   
+
+    <p class="color">
+        color: cadetblue<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+    </p>
+    <p class="ta">
+        text-align: justify<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+    </p>
+    <p class="td">
+        text-decoration: line-through<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+    </p>
+    <p class="transform">
+        text-transform: uppercase<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+    </p>
+    <p class="indent">
+        text-indent: 50px<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+    </p>
+    <p class="spacing">
+        letter-spacing: 10px<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+    </p>
+    <p class="lineheight">
+        line-height: 40px<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+    </p>
+    <p class="shadow">
+        text-shadow: 5px 2px 5px rgba(0, 0, 0, 0.3)<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+    </p>
+</body>
+</html>

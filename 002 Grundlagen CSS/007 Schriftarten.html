@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schriftarten</title>
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        font-weight: 700;
+    }
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    p{
+        border-style: solid;
+    }
+    .SchriftartMitSerifen{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .SchriftartOhneSerifen{        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .fontSize{
+        font-size: 50%;
+        /*1em = 1 x Standard -> 100% 0.5em = 50%*/
+    }
+    #info{
+        border-style: none;
+    }
+    div{
+        border-style: dashed;
+    }
+    .fontStyle{
+        font-style: italic;
+    }
+    .font-weight{
+        /*Nicht jede Schriftart hat Bold,Bolder,Lighter, jedoch können Sie alle mit Zahlen
+        400 ist Standard
+        700 Bold
+        900 Bolder*/
+        font-weight: lighter;
+    }
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Schriftarten</h1>   
+    <div>
+        <p id="info">INFO:</p>
+    <ul>
+        <li>
+            Für den Webbereich nutzt man Serifenlosen Schriftarten da diese Moderner sind.
+        </li>
+        <li>
+            Schriftarten werden immer mit mehreren Alternativen angegeben für den Fall das es<br>
+        die erste Schriftart nicht vom Browser unterstützt wird.
+        </li>
+    </ul>
+</div>
+    <p class="SchriftartMitSerifen">
+        font-family: 'Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p class="SchriftartOhneSerifen">
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p class="fontSize">
+        font-size: 50%<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p class="fontStyle">
+        font-style: italic<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p class="font-weight">
+        font-weight: lighter<br>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Deleniti debitis inventore praesentium rerum eligendi sint quibusdam cupiditate,
+        amet commodi a quam soluta, iure magnam? 
+        Velit adipisci voluptatem ea veritatis voluptatibus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    
+</body>
+</html>

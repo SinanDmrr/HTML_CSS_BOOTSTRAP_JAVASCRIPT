@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linksstyling</title>
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    p{
+        border-style: solid;
+    }
+    /*Navigationsleiste navbar*/
+    .navbar{
+        background-color: rgb(169, 158, 145);        
+        border-radius: 5px;
+        padding: 10px;
+        font-family: sans-serif;
+    }
+    .linkStyling{
+        color: whitesmoke;
+        margin-right: 15px;
+        font-size: 1.5em;
+        text-decoration: none;        
+    }
+    .linkStylingg{
+        color: whitesmoke;        
+        font-size: 1.5em;
+        text-decoration: none;        
+    }
+    button.btn{
+        background-color: cadetblue;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;      
+        box-shadow: 5px 2px 5px;
+    }
+    button.btn a{
+        color: whitesmoke;
+        text-decoration: none;  
+    }
+    /*
+        FUNKTIONS AUFRUFE UM LINK ZU STYLEN
+        mit : ruft man Funktion auf hier das hover also wenn Maus drüber geht
+    */        
+    a.linkStyling:hover{
+        font-size: 2em;
+    }
+    button.btn:hover{
+        font-size: 1.2em;
+    }
+    button.btn a:active, button.btn:active{
+        color: red;
+    }
+    /*visited-> Besucht worden*/
+    a.linkStyling:visited{
+        color: whitesmoke;;
+    }
+    /*active-> Beim Klicken*/
+    a.linkStyling:active{
+        color: red;
+    }
+    
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+    <h1>Links-Styling</h1>   
+    <div class="navbar">
+        <a class="linkStyling" href="https://www.google.de/" target="_blank">Zu Google</a>
+    <a class="linkStyling" href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite" target="_blank">Zu Wikipedia</a>
+    <button class="btn"><a class="linkStylingg" href="https://www.youtube.com/" target="_blank">YouTube</a></button>
+    </div>
+    
+</body>
+</html>

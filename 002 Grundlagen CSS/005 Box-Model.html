@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+</head>
+<style>
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    p{
+        font-weight: 700;
+    }
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    div p{
+        border-style: solid;
+        border-color: brown;
+        border-radius: 50px;
+        padding: 20px;
+        margin:20px;
+        background-color: rgb(244, 146, 27);
+        text-align: left;
+    }
+    div{
+        background-color: burlywood;
+        border-style: solid;
+        margin: 20px;
+    }
+    p{
+        text-align: center;
+    }
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Box-Model</h1>   
+
+    <div>
+        <p>Ich bin ein Text</p>
+        <!--Zwischen Textelementen und Überschriften entsteht ein
+            MARGIN-COLLAPSE d.h. zwischen den beiden Texten Entsteht kein 40px Padding
+            sondern 20px weil die zusammengeführt werden-->
+        <p>Ich bin ein Text</p>
+    </div>
+    <p><mark>
+        Zwischen den Textelementen oben müssten 40px Padding entstehen da jedes P-Tag 
+        ein Margin von 20px hat, jedoch kommt hier das MARGIN-COLLAPSE zu greifen d.h. 
+        zwischen den beiden Texten Entsteht kein 40px Margin sondern 20px,
+        weil die zusammengeführt werden vom Browser automatisch.
+        Dies tritt bei Textelemente wie auch Überschriften vor.
+    </mark></p>
+</body>
+</html>
