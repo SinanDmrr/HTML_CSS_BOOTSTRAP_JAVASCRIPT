@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+        font-family: sans-serif;
+        font-size: 1.3em;
+    }
+    p{
+        font-weight: 700;
+    }
+    .grid{
+        border: 3px solid red;
+    }
+    .relative{
+        position: relative;
+        left: 50px;
+    }
+    .rela{
+        position: relative;
+        border: 2px solid red;
+        left: 250px;
+        height: 300px;
+        width: 500px;
+    }
+    .absolute{
+        border: 3px solid green;
+        width: 200px;
+        height: 150px;
+        overflow: hidden;
+        /*Absolut bezieht sich nicht mehr ans ViewPort sondern ans übelegende element hier das Div*/
+        position: absolute;
+        top:10px;
+        right: 10px;
+    }
+    .fixed{
+        /*Fixiert es an der Position auch wenn man scrollt ist es immer zu sehen*/
+        position: fixed;
+        top:10px;
+        right: 10px;        
+    }
+    .sticky{
+        position: sticky; /*Für Edge und Safari Browser: -webkit-sticky*/
+        top: 150px;
+    }
+    .imgGr{
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        /*Bild in der Z Achse -1 setzen also hinten weil alle elemente z=0 haben */
+        z-index: -1;
+    }
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Position</h1>   
+    <p>Positions richten sich am Viewport aus also am Sichtfeld / Fensterkanten</p>
+    <div class="grid">Static / Standard Default Ausrichtung</div>
+    <br>
+    <div class="grid relative">Relative / Wie Static nur verschiebbar</div>
+    <br>
+    <div class="grid fixed">Fixed / Inline-Block Element geworden und Fixiert an Ort und Stelle </div>
+    <br>
+    <div class="grid rela">Relatives Div
+        <div class="absolute">Absolutes Div bezieht sich nun nicht aufs Viewport sondern den Relativen Div in dem es sich befindet</div>
+    </div>
+    <br>
+    <div class="grid sticky">Sticky / Ab wann soll es an einer Position kleben bleiben</div>
+    <br>
+    <div class="rela">
+        <img class="imgGr" src="Bilder/farbverlauf.jpg" alt="farbverlauf">
+        <p>Lorem Ipsum dolor</p>
+    </div>
+
+
+
+    <br>
+    <div style="height: 2000px;"></div>
+    <br>
+</body>
+</html>
