@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<style>
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    link p{
+        font-weight: 700;
+    }
+    div{
+        background-color: lime;
+    }
+    .inlineBlock{
+        background-color: aqua;
+        /*P ist Block Element mit display kann man es zu Inline-Block machen*/
+        display: inline-block;
+    }
+    p{
+        background-color: aquamarine;
+    }
+    span{
+        background-color: blue;
+        color: aliceblue;
+    }
+
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+    <h1>Display</h1>   
+
+    <div>Bin ein Div also auch ein Block Element</div>
+    <p class="inlineBlock">Bin ein Paragraph aber meine Display Eigenschaft wurde von Block zu Inline geändert</p>
+    <p>Ich bin ein Paragraph also ein Block Element</p>
+    <span>Bin ein Span-Elemnt also Inline</span>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen</title>
+    <style>
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+        font-family: sans-serif;
+    }
+    p{
+        font-weight: 700;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    caption{
+        background-color: rgb(229, 211, 183);
+        border: 1px solid black;
+        border-bottom: 0;
+        font-size: 40px;
+    }
+    .tableContainer{
+        /*overflow-y Y-Achse und x X-Achse Scrollen*/
+        overflow-x: auto;
+    }
+    table{
+        width: 100%;
+    }
+    table, th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }    
+    tr:hover{
+        background-color: rgb(229, 211, 183);
+    }
+    th{
+        height: 40px;
+        text-align: center;
+        background-color: rgb(229, 211, 183);
+    }
+    th, td{
+        padding: 5px;
+    }
+    
+    </style>
+</head>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+    <h1>Tabelle</h1>
+    <div class="tableContainer">
+    <table>
+        <caption>Adressbuch</caption>
+        <thead>
+            <tr>
+                <th>Geschlecht</th>                
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Strasse</th>
+                <th>Hausnummer</th>
+                <th>PLZ</th>
+                <th>Ort</th>                               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mann</td>
+                <td>Max</td>
+                <td>Mustermann</td>
+                <td>Musterstrasse</td>
+                <td>12</td>
+                <td>12345</td>
+                <td>Musterort</td>
+            </tr>
+            <tr>
+                <td>Frau</td>
+                <td>Kata</td>
+                <td>Strophe</td>
+                <td>Musterstrasse</td>
+                <td>24</td>
+                <td>12345</td>
+                <td>Musterort</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Robo</td>
+                <td>Ter</td>
+                <td>Musterstrasse</td>
+                <td>24</td>
+                <td>12345</td>
+                <td>Musterort</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
