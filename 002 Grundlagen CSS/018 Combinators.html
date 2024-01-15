@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+</head>
+<style>
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+        font-family: sans-serif;
+        font-size: 1.3em;
+    }
+    p{
+        font-weight: 700;
+    }
+    /*Die Kinder von der ersten Elternklasse first-parent*/
+    #first-parent > p{
+        background-color: aqua;
+    }
+    /*Die Kinder von der zweiten Elternklasse second-parent*/
+    #second-parent > p{
+        background-color: chocolate;
+    }
+    /*Die P Elemente im Div*/
+    div p {
+        color: plum;
+    }
+    .Elternteil{
+        border: 3px solid red;
+    }
+    .DrittesKindElternteil{
+        border: 3px solid rgb(77, 255, 0);
+        margin: 5px;
+    }
+    /*
+        Größer als Zeichen >
+
+        Plus Zeichen +
+
+        Tilde Zeichen ~
+
+        Leerzeichen 
+    */
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Combinators</h1>   
+    <p>Größer als Zeichen > <br>
+        Plus Zeichen + <br>
+        Tilde Zeichen ~ <br>
+        Leerzeichen <br></p>
+    <div class="Elternteil" id="first-parent">Ich bin das Elternteil <br>
+        
+        <p class="ErstesKind">Ich bin das erste Kind</p>
+        <p class="ZweitesKind">Ich bin das zweite Kind</p>
+        <div class="DrittesKindElternteil" id="second-parent">Ich bin das dritte Kind und Elternteil
+            <p class="ErstesKindZweitenElternteils">Ich bin das erste Kind des zweiten Elternteil</p>
+        </div>
+    </div>
+</body>
+</html>

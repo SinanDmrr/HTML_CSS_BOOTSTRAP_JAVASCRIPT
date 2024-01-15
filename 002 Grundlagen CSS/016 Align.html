@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align</title>
+</head>
+<style>
+    .link{
+        color: black;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    h1{
+        font-size: 50px;
+        color: rgb(207, 114, 1);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+        margin: 0px;
+    }
+    body{
+        background-color: antiquewhite;
+        font-family: sans-serif;
+        font-size: 1.3em;
+    }
+    p{
+        font-weight: 700;
+    }
+    .center{
+        margin: auto;
+        border: 3px solid red;
+        /*Responsiv mit max-width*/
+        max-width: 700px;
+        /*Text Zentrieren*/
+        text-align: center;
+    }
+    img{
+        border: 3px solid red;
+        margin: auto;
+        max-width: 300px;
+        height: auto;
+        display: block;
+        align-items: center;
+    }
+    .right{
+        border: 3px solid red;
+        position: absolute;
+        max-width: 300px;
+        right: 0;
+        text-align: center;
+        margin: 10px;
+    }
+    .float{
+        border: 3px solid red;
+        max-width: 300px;
+        float: left;
+        text-align:center;
+    }
+    .clearFix{
+        border: 3px solid red;
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .img1{
+        float: right;
+        margin: 5px;
+    }
+    .flexbox{
+        border: 3px solid red;
+        display: flex;  /*Damit man Justify-content & align-items nutzen kann*/
+        justify-content: center; /*Horizontale ausrichtung */
+        align-items: center;    /*Vertikale ausrichtung*/
+        height: 200px;
+    }
+</style>
+<body>
+    <a href="000 Main.html" class="link">Zur Hauptseite</a>
+    <hr>
+
+    <h1>Align</h1>   
+    <p>Align funktioniert nur für BLOCKELEMENTE z.B. IMGs sind INLINE also -> display: Block machen</p>
+    <div class="center">
+        <p>
+            Ich bin in der Mitte
+        </p>
+    </div>
+    <br>
+    <img src="Bilder/farbverlauf.jpg" alt="Farbverlauf">
+    <br>
+    <div class="right">
+        <p>Ich bin ein Element das mit positon platziert wurde.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="float">
+        <p>Ich bin ein Element das mit float platziert wurde.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="clearFix">
+        <img class="img1" src="Bilder/farbverlauf.jpg" alt="Farbverlauf">
+        Mit CLEARFIX: <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis architecto perspiciatis 
+        suscipit alias magni ad ut illo, ea perferendis tempora veniam repellat aut, id ratione. 
+        Doloribus quasi consectetur ipsa modi.
+    </div>
+    <br>
+    <div class="flexbox">
+        <p>Ich wurde mit Flexbox ausgerichtet</p>
+    </div>
+</body>
+</html>
