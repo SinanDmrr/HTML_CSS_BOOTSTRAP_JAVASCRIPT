@@ -32,11 +32,82 @@
     p{
         font-weight: 700;
     }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background-color: lightgray;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        /*Mit Wrap springt der Inhalt in die nächste Zeile, wenn es oben zu eng wird*/
+        flex-flow: wrap row;
+        /*Alle Elemente werden HORIZONTAL mittig Ausgerichtet (Zentriert)*/
+        justify-content: center;
+        /*Alle Elemente werden VERTIKAL gestretched zum Container*/
+        align-items: stretch;
+    }
+    .item{
+        border: 1px solid darkmagenta;
+        padding: 20px;
+        text-align: center;
+        /*Umsortieren*/
+        order: 2;
+    }
+    .item4{
+        /*Umsortieren*/
+        order:1;
+    }
 </style>
 <body>
     <a href="000 Main.html" class="link">Zur Hauptseite</a>
     <hr>
 
     <h1>Flex-Box</h1>   
+    <p>Mit FlexBoxen kann ein Layout Design auf der Webseite erstellen / gewährleisten <br>
+    Auch Responsivble Effekte können mit FlexBoxen erzeugen wie z.B. Float</p>
+    <div class="container">
+        <div class="item">
+            <p>
+                1 Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                2 Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                3 Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+        <div class="item item4">
+            <p>
+                4 Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                5 Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                6 Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                7 Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+        <div class="item">
+            <p>
+                8 Lorem Ipsum Dolor Sit Amet
+            </p>
+        </div>
+    </div>
 </body>
 </html>
