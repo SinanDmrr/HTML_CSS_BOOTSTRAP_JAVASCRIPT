@@ -8,6 +8,7 @@
     <title>Home</title>
 </head>
 <body>
+    <div class="background-container"></div>
     <div class="navbar-container container-fluid">
         <div class="navbar-item-container row">
             <a href="Home.html" class="navbar-link active">Home</a>
@@ -21,20 +22,41 @@
         col-sm-10   = 83.33% Breite
         Werden im CSS unter Media Queries entsprechend definiert
     -->
-    <div class="title-container col-l-4 col-6 col-sm-10 ">
+    <div class="title-container col-l-6 col-8 col-sm-10">
         <h1>Herzlich Willkommen</h3>
         <p>Die Galerie deines Lebens</p>
     </div>
     <br>
     <br>
-    <div class="login">
-        <h3>Jetzt einloggen</h3>
-        <label for="email">Deine E-Mail:</label>
-        <input type="email" name="email">
-        <p class="subInfo">Trage deine E-Mail Adresse ein</p>
-        <label for="password">Dein Passwort:</label>
-        <input type="password" name="password">
-        <p class="subInfo">Trage deine E-Mail Adresse ein</p>        
-    </div>
+    <div class="login-container col-l-6 col-8 col-sm-10">
+        <!--lif = login Formular-->
+        <h3 class="lif-login-title">Jetzt einloggen</h3>        
+        <form method="post" class="lif-form" id="lif-login-form">
+            <div class="form-section-email">
+                <label for="lif-email">Deine E-Mail:</label>
+                <input type="email" class="lif-email lif-email-input" id="lif-email" placeholder="deine Email">        
+                <div><small>Trage deine E-Mail Adresse ein</small></div>
+            </div>            
+            <br>
+
+            <div class="form-section-password">
+                <label for="lif-password">Dein Passwort:</label>
+                <input type="password" class="lif-password lif-password-input" id="password" placeholder="dein Passwort">
+                <div><small>Trage dein Passwort ein</small></div>
+            </div>
+            <br>
+
+            <div class="form-section-check">
+                <input type="checkbox" name="checkbox" value="true">
+                <label for="checkbox">Eingelogt bleiben?</label>
+            </div>
+            <br>
+
+            <div class="form-section-button">
+                <button class="lif-button">Login</button>
+            </div>
+            <hr>   
+        </form>
+    </div>    
 </body>
 </html>

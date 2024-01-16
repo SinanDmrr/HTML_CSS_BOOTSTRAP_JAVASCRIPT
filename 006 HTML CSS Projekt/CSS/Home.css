@@ -2,7 +2,13 @@
 body{
     margin: 0;    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(../Bilder/blurred_oktagon\ abstrak.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 /*
 Fluid Grid Layout / CSS GRID:
 Wird verwendet um sich an die Bildschirmgröße anzupassen.
@@ -170,7 +176,7 @@ row klasse mit der pseudoklasse ::after*/
 .navbar-container{
     background-color: #1b1c1f;
     padding: 15px;
-    box-shadow: 0 3px 5px aquamarine;/* Unter der Navbar entsteht auqamarine neon Shadow */
+    box-shadow: 0 3px 5px rgb(20, 150, 100);/* Unter der Navbar entsteht auqamarine neon Shadow */
     text-align: center;
     top: 0; /* Damit Sticky Funktioniert muss erst die Position definiert werden */
     position: sticky;   /* Sticky für die meisten Browser */
@@ -193,5 +199,51 @@ a.active{
 }
 
 .title-container{
-    border: 3px solid red;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color:#1b1c1f ;
+    text-align: center;
+}
+
+/* LOGIN Container */
+.login-container{
+    padding: 50px;
+    border: 3px solid black;
+    border-radius: 30px;
+    background-color:#1b1c1f ;
+    /* Sorgt dafür das man im Div keine Texte Markieren kann */
+    user-select: none;  
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+}
+.lif-login-title{
+    font-size: 38px;
+}
+/* Um die beiden Inputfelder unter das Label zu bringen und zu Stylen */
+.lif-email, .lif-password{
+    display: block;/*Inline Element wird zum Blockelement und nimmt gesamte zeile ein*/
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%; /*Um das Inputfeld auf die gesamte Seite zu strecken*/ 
+    outline: none;  /*Der Fokusrahmen wenn man in das Feld klickt der dann erscheint*/
+}
+
+.lif-button{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgb(20, 150, 100);
+    color: #1b1c1f;
+    box-shadow: 5px 3px 5px black;
+}
+
+.lif-button:hover{
+    background-color: rgb(16, 113, 75);
 }
