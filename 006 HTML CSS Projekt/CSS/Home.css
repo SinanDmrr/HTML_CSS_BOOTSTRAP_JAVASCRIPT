@@ -1,0 +1,106 @@
+/*
+Fluid Grid Layout:
+Wird verwendet um sich an die Bildschirmgröße anzupassen.
+*/
+*{
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    margin: 0 auto; /*Zentriert das Raster*/
+}
+.column{
+    width: 100%;
+    box-sizing: border-box; /* Verhindert, dass Padding/Border die Breite beeinflusst */
+    float: left;
+    padding: 10px; 
+}
+
+/* Stile für kleine Bildschirme (bis 600px) */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%; /* Die Spalten nehmen den gesamten Bildschirm ein */
+    }    
+    *{        
+        font-size: 20px;
+    }
+    h1{
+        font-size: 35px;
+    }
+}
+
+/* Stile für mittelgroße Bildschirme (601px bis 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .column {
+        width: 50%; /* Die Spalten nehmen die Hälfte des Bildschirms ein */
+    }
+    *{
+        font-size: 22px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+
+/* Stile für große Bildschirme (ab 1025px) */
+@media screen and (min-width: 1025px) {
+    .column {
+        width: 33.33%; /* Die Spalten nehmen ein Drittel des Bildschirms ein */
+    }
+    *{        
+        font-size: 24px;
+    }
+    h1{
+        font-size: 40px;
+    }
+}
+/* Sorge dafür, dass Bilder und andere Medien sich an den Container anpassen: */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-image: url(Bilder/paper-186899_1920.jpg);
+    background-size: cover; /* Das Bild wird gestreckt, um den gesamten Hintergrund zu bedecken */
+    background-position: center center; /* Zentriere das Bild sowohl horizontal als auch vertikal */
+    background-repeat: no-repeat; /* Verhindere das Wiederholen des Bildes */
+    background-attachment: fixed; /* Das Bild bleibt beim Scrollen fixiert (optional) */
+    margin: 0; /* Entfernt den Standardaußenabstand des Body-Elements */
+    padding: 0; /* Entfernt den Standardinnenabstand des Body-Elements */
+    text-align: center; /* Zentriert den Text innerhalb des Body-Elements */
+}
+
+.navbar{
+    margin: 10px;
+}
+
+.willkommen{
+    max-width: 400px;
+    background-color: rgb(100, 120, 140);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;    
+    margin: 10px auto;
+}
+.willkommen h3{
+    font-size: 30px;
+
+}
+
+.login{
+    max-width: 600px;
+    background-color: rgb(100, 120, 140);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 70px;    
+    margin: 10px auto;
+}
+.subInfo{
+    margin: 0;
+    vertical-align: sub;
+    font-size: smaller;
+}
+
