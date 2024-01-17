@@ -171,6 +171,23 @@ row klasse mit der pseudoklasse ::after*/
     margin: auto
 }
 
+.btn-full{
+    width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgb(20, 150, 100);
+    color: #1b1c1f;
+    box-shadow: 5px 3px 5px black;
+}
+
+.btn-full:hover{
+    background-color: rgb(16, 113, 75);
+}
+
 /* NAVBAR */
 .navbar-container{
     background-color: #1b1c1f;
@@ -198,7 +215,7 @@ a.active{
 }
 
 .title-container{
-    margin-top: 50px;
+    margin: 50px auto 50px auto;
     padding: 15px;
     border: 3px solid black;
     border-radius: 30px;
@@ -210,4 +227,18 @@ a.active{
 }
 .title-container p{
     font-size: 30px;
+}
+
+.galerie-content-container{
+    padding: 10px;
+    background-color: #1b1c1f;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.galerie-item{
+    padding: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
