@@ -27,15 +27,47 @@
         <a href="#ende" id="anfang"><button class="btn-full">Zum Ende springen</button></a>
         
     </div>
+
     <!--Ober Container-->
-    <div class="galerie-content-container col-l-8 col-9 col-sm-10">
-        <!--Container für die Galerie-->
-        <div class="galerie-content">
-            
+    <div class="galerie-content-container col-l-8 col-9 col-sm-10">      
+        <div class="galerie-content row">
+
+            <div class="galerie-img-item galerie-item float col-l-4">
+                <img src="https://cdn.pixabay.com/photo/2017/08/29/23/49/abstract-background-2695347_960_720.jpg" width="150" height="150" alt="abstrakt blue">
+                <p><cite>Das Bild 150x150</cite> Via <a href="https://pixabay.com/de/illustrations/abstract-background-abstrakt-color-2695347/" target="_blank">Quelle</a></p>
+            </div>
+
+            <div class="galerie-item galerie-img-item float col-l-4">
+                <picture>
+                    <source src="../Bilder/abstrakt blue.jpg" media="all" type="jpg">
+                    <img src="../Bilder/abstrakt blue.jpg" width="350" height="350" alt="abstrakt blue">
+                </picture>
+                <p><cite>Das Bild 350x350</cite> Via Filestream</p>
+            </div>
+
+            <div class="galerie-img-item galerie-item float col-l-4">
+                <img src="https://cdn.pixabay.com/photo/2017/06/24/11/36/create-2437521_1280.jpg" width="300" height="300" alt="abstrakt blue">
+                <p><cite>Das Bild 300x300</cite> Via <a href="https://pixabay.com/de/illustrations/create-sch%C3%B6pfung-paint-color-2437521/" target="_blank">Quelle</a></p>
+            </div>
+
+            <div class="galerie-item galerie-audio-item">
+                <audio controls muted>
+                    <source src="../audio/FBI.mp3" type="audio/mp3">
+                </audio>
+                <p><cite>Das Bild 300x300</cite> Via Filestream</p>
+            </div>
+
+            <div class="galerie-item galerie-video-item float col-l-4">  
+                <video width="450">
+                <source src="../video/Gamer Smashes Computer with Samurai Sword in ultimate rage quit.mp4" type="video/mp4">
+            </video> 
+            <p><cite>Das Video 450x450</cite> Via Filestream</p>
+            </div>
         </div>
     </div>
 
-    <div class="title-container col-l-8 col-9 col-sm-10">
-        <a href="#anfang" id="ende"><button class="btn-full">Zum Anfang springen</button></a>
+    <div class="end-container col-l-8 col-9 col-sm-10">
+        <a href="#anfang" id="ende">
+            <button class="btn-full" style="margin-top: 20px; margin-bottom: 20px;">Zum Anfang springen</button></a>
     </div>
     <br>
