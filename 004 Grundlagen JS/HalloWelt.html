@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hallo Welt</title>
+    <!--
+        jQuery ist eine kleine schnelle JavaScript-Bibliothek mit einer benutzerfreundlichen API
+        Um jQuery verwenden zu können muss man von der seite https://releases.jquery.com/
+        die "uncompressed" version kopieren und in das Projekt einfügen siehe unten
+    -->
+    <script 
+    src="https://code.jquery.com/jquery-3.7.1.js" 
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+    crossorigin="anonymous">
+    </script>
+    <!--JS Code kann im Header sowie auch im Body definiert werden-->
+    <!--Im Header macht man es, JS schon bevor die Seite geladen werden soll sachen 
+    bearbeitet z.B. MetaTags, das führt natürlich dazu das Webseiten welche im head den 
+    JS Code haben etwas länger laden bis die webseite gezeigt wird-->
+</head>
+<body>
+    <!--JS Code kann im Header sowie auch im Body definiert werden-->
+    <!--Im Body setzt man den JS Code, wenn man erst nach dem die Seite geladen wurde
+    logik anweisungen gibt durch DOM Manipulation
+    (
+        DOM-Manipulation steht für "Document Object Model" (Dokumentobjektmodell) und 
+        bezieht sich auf die Möglichkeit, die Struktur, den Stil und den Inhalt einer 
+        Webseite mithilfe von JavaScript zu verändern. 
+    )
+    Hier durch wird die Seite erste geladen was dem User schneller die webseite laden lässt
+    dadurch das das Script erst ans ende der HTML kommt -->
+
+    <script>
+        // Erzeugt eine Aleart Box die oben erscheint wenn die Seite geladen wird mit dem Text
+        // Hallo Welt!
+        alert("Hallo Welt!");
+    </script>
+</body>
+</html>
