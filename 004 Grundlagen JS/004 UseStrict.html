@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variablen</title>
+</head>
+<body>
+    <script>
+        // Bei 003 Variablen.html haben wir gesehen das man eine Variable niemals nutzen sollte
+        // um dies auch zu gewährleisten das keiner die nutzt auch nicht unwissentlich
+        // gibt es die "use strict" Anweisung die dafür sorgt das diese Variante nicht angewandt wird
+
+        // Verhindert ganz alte JS Deklarationen wie Variante3
+        "use strict"
+        
+        // 1.VERALTETE VARIANTE:
+        // Diese Variante ist noch nicht SOOO Veraltet das es unter use Strict fällt aber
+        // irgendwann wird auch das der fall sein deswegen mit let arbeiten
+        var name1 = "Tobias";
+
+        // 2.NEUE VARIANTE DIESE NUTZEN!:
+        let name2 = "Melanie";
+
+        // 3.NIEMALS DIESE VARIANTE NUTZEN!:
+        //name3 = "Simon";
+
+
+        // Unterschiedliche Varianten
+        document.write("Variablen Deklarieren: 3 unterschiedliche Arten<br>" +
+                       "1. Veraltete Variante (var): " + name1 + "<br>" +
+                       "2. Neue Variante (let statt var): " + name2 + "<br>");
+                       //"3. NIEMALS NUTZEN (ohne Var & Let): " + name3 + "<br>");
+        
+    </script>
+</body>
+</html>

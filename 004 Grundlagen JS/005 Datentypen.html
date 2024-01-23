@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variablen</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        // WICHTIG mit LET entscheidet JavaScript was die Varible ist d.H. wenn ich "asd" schreibe weis es das es ein String ist
+        let string = "String: A-Z, a-z, 0-9, Sonderzeichen";
+        document.write("Ich bin ein String also eine Zeichenkette in mich kann man alles Speichern!<br>" + string + "<br>");
+        
+        let int = 42;
+        document.write("Ich bin ein Integer in mich kann man Ganzzahlen Speichern!<br>" + int + "<br>");
+
+        let double = 42.124123;
+        document.write("Ich bin ein double in mich kann man Gleitkomma Zahlen Speichern!<br>" + double + "<br>");
+
+        let bool = true;
+        document.write("Ich bin ein boolean in mich kann man True oder False Speichern!<br>" + bool + "<br>");
+
+        let ud = undefined;
+        document.write("Ich bin undefiniert!<br>" + ud + "<br>");
+
+        let object = [
+            name => "Josef",
+            alter => 30,
+            is18 => true
+        ];
+        document.write("Ich bin Object in mich kann man mehrere Datentypen abspeichern!<br>" + object + "<br>");
+    </script>
+</body>
+</html>
