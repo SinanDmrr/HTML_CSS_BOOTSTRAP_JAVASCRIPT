@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variablen</title>
+</head>
+<body>
+    <script>
+        "use strict"
+        //TODO: WICHTIG DIE VARIABLE ÄNDERT SICH NICHT WIR ÜBERSCHREIBEN DIE NICHT! 
+        //      DIE METHODEN ERZEUGEN IMMER EINEN NEUEN STRING UM DEN ÜBERGEBENEN STRING NICHT ZU VERÄNDERN
+        let string = "---Hello Javascript---";        
+        document.write("String Wert: "+string)
+        document.write("<br>")
+        document.write("<br>")
+
+        
+        //TODO: Zeichen eines Strings zählen
+        document.write("length: "+string.length)
+        document.write("<br>")
+
+        //TODO: Text ersetzen
+        document.write("replace: "+string.replace("Hello", "Moin"))
+        document.write("<br>")
+
+        //TODO: Einzelnes Zeichen abfragen -> 0 - 21
+        document.write("charAt 4 - Zeichen an Position 4: "+string.charAt(4))
+        document.write("<br>")
+        document.write("Alternative zu string.charAt(4) -> string[4]: "+string[4])
+        document.write("<br>")
+
+        //TODO: Zeichen finden -> Groß- /Kleinschreibung beachten! -> Bei mehrern Treffern wird erster Treffer ausgegeben
+        document.write("indexOf(\"J\"): "+string.indexOf("J"))
+        document.write("<br>")
+        // Um bei mehreren aufkommenden Zeichenketten z.B. erst nach 11 Zeichen zu beginnen geht man wie folgt vor
+        document.write("indexOf(\"a\",\"11\"): "+string.indexOf("a",11)) // fängt String ab 11 Stelle an zu prüfen
+        document.write("<br>")
+
+        //TODO: Groß- & Kleinbuchstaben
+        document.write("String zu Großbuchstaben: -> .toUpperCase(): "+string.toUpperCase())
+        document.write("<br>")
+        document.write("String zu Kleinbuchstaben -> .toLowerCase(): "+string.toLowerCase())
+        document.write("<br>")
+
+        //TODO: Leerzeichen rechts und links entfernen
+        document.write("string.trim()"+string.trim())
+        document.write("<br>")
+
+        //TODO: Neue Zeile (Newline) -> "\n" in JavaScript also mit Console.Log würde man es sehen 
+        //                              Da document.write aber ins HTML document schreibt macht man hier "<br>"
+        document.write("Newline, neue Zeile -> string + \" 'Backslash'n Hallo:" +string + "<br> Hallo")
+        document.write("<br>")
+
+        //TODO: String wiederholen 5 mal z.B. um Trennlinien zu erstellen ______________________
+        document.write("repeat(5): "+"_".repeat(20))    // Erstellt nun 20 mal _ dadurch erhalten wir ______________
+        document.write("<br>")
+
+        //TODO: String .slice(start, end) -> Schneidet vor Startpunkt und nach Endpunkt alles weg
+        document.write("slice(5): "+string.slice(9, 19))
+        document.write("<br>")
+
+        //TODO: String .substr(Start, Length) -> Zeig vom Startpunkt + die angegeben Länge den String Teilbereich an
+        document.write("substr(5): "+string.substr(3, 5))    
+        document.write("<br>")
+
+
+        //TODO: WICHTIG DIE VARIABLE ÄNDERT SICH NICHT WIR ÜBERSCHREIBEN DIE NICHT! 
+        //      DIE METHODEN ERZEUGEN IMMER EINEN NEUEN STRING UM DEN ÜBERGEBENEN STRING NICHT ZU VERÄNDERN
+        document.write("<br>")
+        document.write(string)    
+        document.write("<br>")
+    </script>
+</body>
+</html>
