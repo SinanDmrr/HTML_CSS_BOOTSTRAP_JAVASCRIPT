@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schleifen</title>
+</head>
+<body>
+    <script>
+        "use-strict"
+        // FOR-Schleife
+        for(let i = 1; i <= 10; i++ ){
+            document.write(i);
+            document.write("<br>");
+        }
+
+        document.write("-".repeat(50) + "<br>");
+
+        let namen = ["Max", "Lisa", "Manuel"]
+        // FOR-EACH-Schleife
+        namen.forEach(element => {
+            document.write(element);
+            document.write("<br>");
+        });
+
+        document.write("<br>");
+        // FOR-IN-Schleife -> Gibt die Indexe der Elemente aus dem Array zurück
+        for (let indexOfName in namen) {
+            document.write(indexOfName);
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+        // FOR-OF-Schleife -> Gibt die ELEMENTE aus dem ARRAY wieder -> Wie ForEach
+        for (let name of namen) {
+            document.write(name);
+            document.write("<br>");
+        }
+        document.write("-".repeat(50) + "<br>");
+
+        // WHILE-Schleife
+        let startwert = 0;
+        while(startwert != 10){
+            document.write(startwert);
+            startwert++;
+            document.write("<br>");
+        }
+
+    </script>  
+</body>
+</html>

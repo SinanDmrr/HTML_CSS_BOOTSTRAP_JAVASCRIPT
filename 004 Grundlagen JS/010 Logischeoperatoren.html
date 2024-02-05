@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logischeoperatoren</title>
+</head>
+<body>
+    <script>
+        "use-strict"
+
+        //Objekt erzeugen
+        let person1 = {
+            name:"Max Mustermann",
+            age: 15,
+            elternErlaubnis: true
+        };
+        let person2 = {
+            name:"Kata Strophe",
+            age: 20,
+            elternErlaubnis: false
+        }
+
+        document.write("INFOS im CODE zu sehen ")
+        document.write("<br>");
+        document.write("_".repeat(100) + "<br>");
+
+        // && -> AND
+        if(person1.age >= 18 && person1.name == "Max Mustermann"){
+            document.write(`Zugriff wurde gewährt,<br>hallo ${person1.name}`);
+        }
+        else{
+            document.write(`Zugriff wurde für ${person1.name} nicht gewährt`);
+        }
+        document.write("<br>");
+        if(person2.age >= 18 && person2.name == "Kata Strophe"){
+            document.write(`Zugriff wurde gewährt, hallo ${person2.name}`);
+        }
+        else{
+            document.write(`Zugriff wurde für ${person2.name} nicht gewährt`);
+        }
+        document.write("<br>");
+        if(person2.age >= 18 && person2.name == "Max Mustermann"){
+            document.write(`Zugriff wurde gewährt, hallo ${person2.name}`);
+        }
+        else{
+            document.write(`Zugriff wurde für ${person2.name} nicht gewährt`);
+        }
+        document.write("<br>");
+        document.write("_".repeat(100) + "<br>");
+
+
+        // || -> OR
+        if(person1.age >= 18 || person1.elternErlaubnis == true){
+            document.write(`Zugriff wurde gewährt, hallo ${person1.name}`);
+        }
+        else{
+            document.write(`Zugriff wurde für ${person1.name} nicht gewährt`);
+        }
+        document.write("<br>");
+        if(person2.age >= 18 || person2.elternErlaubnis == true){
+            document.write(`Zugriff wurde gewährt, hallo ${person2.name}`);
+        }
+        else{
+            document.write(`Zugriff wurde für ${person2.name} nicht gewährt`);
+        }
+        document.write("<br>");
+        document.write("_".repeat(100) + "<br>");
+
+
+        // ! -> NOT
+        // Fall 1 -> Gibt FALSE aus, weil person1 Max ist
+        if(person2.name == "Max Mustermann"){       
+            document.write(`Zugriff wurde gewährt, hallo ${person2.name}`);
+        }
+        else{
+            document.write(`Zugriff wurde für ${person2.name} nicht gewährt`);
+        }
+        document.write("<br>");
+        // Fall2 -> Gibt TRUE aus, weil es NEGIERT wird d.h. der FALSE WERT wird zum TRUE 
+        // Gleiches ergebnis würde auch wie folgt gehen -> if(person2.name != "Max Mustermann")
+        if(!(person2.name == "Max Mustermann")){   
+            document.write(`Zugriff wurde gewährt, hallo ${person2.name}`);
+        }
+        else{
+            document.write(`Zugriff wurde für ${person2.name} nicht gewährt`);
+        }
+        document.write("<br>");
+        document.write("_".repeat(100) + "<br>");
+    </script>
+    
+
+</body>
+</html>
