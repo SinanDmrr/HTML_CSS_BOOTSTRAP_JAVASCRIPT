@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekte sortieren in JavaScript</title>
+</head>
+<body>
+    <script>
+        "use-strict"
+        
+        let zahlen = {
+            "2": "Zwei",
+            "1": "Eins",
+            "4": "Vier",
+            "3": "Drei"
+        }
+
+        // Dadurch das JavaScript die Keys in Number umkonvertiert sortiert er diese Automatisch
+        for (const key in zahlen) {
+            document.write(key)
+        }
+
+    </script>
+</body>
+</html>

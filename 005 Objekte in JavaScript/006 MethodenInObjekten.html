@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekte sortieren in JavaScript</title>
+</head>
+<body>
+    <script>
+        "use-strict"
+
+        let auto = {
+            //EIGENSCHAFTEN:
+            marke: "Audi",
+            farbe: "weis",
+            baujahr: 1999,
+            tuev: true,
+            kraftstoff: "Benzin",
+            "hat bremsen": true,    // Key aus mehreren Wörtern
+            //FUNKTION LANGE Variante:
+            hupe: function(){       
+                alert("Hup Hup");   
+            },
+            // FUNKTION KURZE Variante:
+            tanken(){
+                // Mit THIS. Referenzieren wir auf das Objekt in welches wir uns aktuell befinden
+                alert(`Auto wird mit dem Kraftstoff: ${this.kraftstoff} betankt!`)
+            }
+        }
+
+        auto.tanken();
+        
+
+    </script>
+</body>
+</html>

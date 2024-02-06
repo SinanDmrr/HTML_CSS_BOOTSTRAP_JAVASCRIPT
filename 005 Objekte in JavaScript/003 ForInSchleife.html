@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objekte bearbeiten in JavaScript</title>
+    <title>ForIn-Schleife bei Objekten in JavaScript</title>
 </head>
 <body>
     <script>
@@ -30,19 +30,7 @@
         //Eigenschaften löschen
         delete auto.fensterheber;
         //alert(auto.fensterheber)    // Gibt undefined wieder
-
-        //Zugriff auf Keys mit mehreren Wörtern
-        //alert(auto["hat bremsen"]);
-
-        //Berechnete Eigenschaften -> Werden zur Runtime durch Funktionen erstellt
-        //let buy = prompt("Kaufe den Audi", "Audi");
-        // Objekt Warenkorb wird erstellt welcher den Key "buy" hat, jedoch ist in Buy Audi gespeichert
-        // let warenkorb = {
-        //    [buy]: "AU97423"    // -> Audi: "AU97423"
-        // };
-
-        alert(warenkorb.Audi);  // Hier wird dann warenkorb mit dem Audi Key Aufgerufen
-
+        
         // Property-Value Kurzschreibweise
         function makeUser(name, email){
             return {
@@ -51,8 +39,14 @@
             }
         }
 
+        // Objekt erstellen mit der Function
         let newUser = makeUser("Max", "Max-Mustermann@gmx.com");
-        alert(newUser.email);
+       
+        // Schleife für Objekte
+        for(let key in auto){
+            document.write("Der Key ist: " + key + "<br>")
+        }
+
     </script>
 </body>
 </html>

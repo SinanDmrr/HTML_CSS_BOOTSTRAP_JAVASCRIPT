@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekte sortieren in JavaScript</title>
+</head>
+<body>
+    <script>
+        "use-strict"
+
+        let auto = {
+            //EIGENSCHAFTEN:
+            marke: "Audi",
+            farbe: "weis",
+            baujahr: 1999,
+            tuev: true,
+            "hat bremsen": true,    // Key aus mehreren Wörtern
+            //FUNKTIONEN:
+            hupe: function(){       
+                alert("Hup Hup");   
+            }
+        }
+
+        //Kopie erstellen:
+        let name = "Josef";
+        let kopierterName = name;   //Josef Orginalwert wird nicht geändert sondern die Kopie davon
+        alert(kopierterName);
+        
+        //Referenz erstellen:
+        // Bei OBJEKTEN verhält es sich anders, dort wird Referenziert auf das Orginal
+        // d.H. let auto2 = auto; würde die Values von Auto erhalten weil Auto2 bezieht sich jetzt
+        // auf die Referenz / Adresse von Auto.
+        // ACHTUNG, wenn wir jetzt hier Auto2.Value ändern werden diese auch in der Referenz
+        // Auto geändert somit können wir ungewollt unsere Objekte Zerstören
+
+        //Um dennoch eine Kopie von einem Objekt zu erhalten geht man einen Umweg
+        let auto2 = {}  // Neues Objekt wird leer gelassen
+        //ForIn Schleife um die Werte aus auto in auto2 zu kopieren
+        for(let key in auto){
+            auto2[key] = auto[key]  // Aktuellen Key von auto in auto2 einfügen
+        }
+        alert(auto2.farbe); // -> Weis wie bei auto
+        auto2.farbe = "rot"; // Farbe von auto2 wird geändert nicht die Referenz zu auto
+        alert(`auto2.farbe=${auto2.farbe}\nauto.farbe=${auto.farbe}`);
+
+
+    </script>
+</body>
+</html>
