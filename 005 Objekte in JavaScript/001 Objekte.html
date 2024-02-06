@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objekte in JavaScript</title>
+</head>
+<body>
+    <script>
+        "use-strict"
+        // Objekte erstellen Möglichkeit 1
+        let auto = new Object();    //Konstruktor        
+        // Eigenschaft zum Objekt hinzufügen
+        auto.marke = "BMW";     //String
+        auto.farbe = "schwarz"; //String
+        auto.baujahr = 1993;    //Integer
+        auto.tuev = true;       //Boolean
+        // Aufruf des Objekts in der Konsole
+        console.log(auto);
+
+        // Objekte erstellen Möglichkeit 2  (DIESE VARIANTE NUTZEN UND ANGEWÖHNEN)
+        let auto2 = {
+            //EIGENSCHAFTEN:
+            marke: "Audi",
+            farbe: "weis",
+            baujahr: 1999,
+            tuev: true,
+            //FUNKTIONEN:
+            hupe: function(){       // Function können mit dieser VARIANTE direkt eingebaut werden
+                alert("Hup Hup");   // Dazu ist diese Variante übersichtlicher
+            }
+        }
+        //Funktions Aufruf  
+        auto2.hupe();   
+
+        // Aufruf des Objekts in der Konsole
+        console.log(auto2);
+        
+    </script>
+</body>
+</html>
