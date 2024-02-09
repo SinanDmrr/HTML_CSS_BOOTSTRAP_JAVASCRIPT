@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das Document Objekt Model (DOM)</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .pHeadline{
+            font-weight: 700;
+            font-size: larger;
+        }
+        ol li ol{
+            font-style: italic;
+            font-weight: 900;
+        }
+        ol ol li:nth-child(1) {
+            color: rgb(224, 171, 32);
+        }
+
+        ol ol li:nth-child(2) {
+            color: rgb(193, 45, 3);
+        }
+
+        ol ol li:nth-child(3) {
+            color: rgb(57, 130, 170);
+        }
+        span{
+            font-weight: 900;
+            text-decoration: underline;
+        }
+        img{
+            height: auto;
+            width: 800px;
+            max-width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Das Document Objekt Model (DOM)</h1>
+    <p>Das DOM ist die Schnittstelle zwischen HTML und dynamsichem JavaScript. <br>
+    Alle Elemente werden zu Objekten, die dynmaisch aufgerufen, verändert, hinzugefügt<br>
+    und gelöscht werden können.</p>
+    <br>
+    <p class="pHeadline">Wie es funktiniert:</p>
+    <ol>
+        <li>Website liegt dem Browser als bloßer Text vor.</li>
+        <li>Während des empfangens des Codes, verarbeitet ihn der <span>Parser des Browsers</span> Stück für Stück</li>
+        <li>Der Parser <span>überführt den Code</span> in eine <span>Objektstruktur</span>. Diese wird im <span>RAM gehalten</span>. <br>
+        Die Struktur besteht aus <span>verschaltelten Knoten</span>.
+        <ol>
+            <li>Elementknoten</li>
+            <li> Attributknoten</li>
+            <li>Textknoten</li>
+        </ol>        
+        Diese ergibt eine <span>Baumstruktur</span>.
+        </li>
+        <li>Der Browser nutzt für die Weiterverarbeitung nun <span>nicht mehr den HTML Code sondern genau diese<br>
+            Objektstruktur aus dem RAM</span>. CSS und JS beziehn sich ebenfalls auf diese Baumstruktur.</li>
+    </ol>
+
+    <img src="./DOM_Baumstruktur.png" alt="DOM-Baumstruktur">
+
+</body>
+</html>
