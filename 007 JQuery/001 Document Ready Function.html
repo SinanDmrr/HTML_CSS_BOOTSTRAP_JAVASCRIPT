@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Document Ready Function</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        button{
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: large;
+        }
+        #color{
+            width: 300px;
+            height: 300px;
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Document Ready Funktion</h1>
+    <button type="button">Klick mich!</button>
+    <div id="color"></div>
+    <p></p>
+
+    <script type = "text/javascript">
+        "use-strict"
+        // Alte doch noch verwendete Variante
+        // $(document).ready(function(){
+        //     //$("p").text ist der Text der in den Paragraphen eingetragen werden soll
+        //     $("p").text("Das DOM ist geladen und kann verändert werden");
+        // });
+
+        // NEUE METHODE DIESE NUTZEN
+        $(function(){
+            $("p").text("Das DOM ist geladen und kann verändert werden");
+        })
+    </script>
+</body>
+</html>
