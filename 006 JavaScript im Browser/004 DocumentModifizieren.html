@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element erstellen, einfügen und löschen</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .pHeadline{
+            font-weight: 700;
+            font-size: larger;
+        }
+
+        p, ol, div, img{
+            margin: 30px;
+        }
+
+        .alert{
+            background-color: rgb(167, 211, 160);
+            padding: 30px;
+            border-radius: 20px;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Element erstellen, einfügen und löschen</h1>
+    <br>
+    <br>
+    <br>
+    <div id="delete" class="alert"><strong>Hallo!</strong> Ich bin ein Alert</div>
+    
+    <p id="trenner">Ich bin einer Trenner</p>
+
+    <script>
+        "use-strict"
+        //Neues Element erzeugen -> Deklarieren und Initialisieren
+        let newAlert = document.createElement("div");
+        newAlert.className = "alert";
+        newAlert.innerHTML = "<strong>Hallo!</strong> Ich bin durch JavaScript erzeugt worden";        
+
+        //Neues erzeugtes Element nun dem Body übergeben
+
+        // Append = Anhängen also Hänge Kind an das Body an
+            // document.body.appendChild(newAlert);   // Hängt das Element unter die anderen vorhanden Elemente
+
+        // Um in einer bestimmten Reihenfolge das Element hinzuzufügen muss man mit before und after arbeiten
+            trenner.before(newAlert) // Fügt das Element "newAlert" vor das hr Tag hinzu
+            //trenner.after(newAlert) // Fügt das Element "newAlert" nach dem hr Tag hinzu
+
+        //append
+            let newAlert2 = document.createElement("div");
+            newAlert2.className = "alert";
+            newAlert2.innerHTML = "<strong>Hallo!</strong> Ich bin durch JavaScript erzeugt worden";
+            trenner.append(newAlert2);
+
+        //prepend
+            let newAlert3 = document.createElement("div");
+            newAlert3.className = "alert";
+            newAlert3.innerHTML = "<strong>Hallo!</strong> Ich bin durch JavaScript erzeugt worden";
+            trenner.prepend(newAlert3);
+
+        //Element mit JavaScript löschen
+        let alertdel = document.getElementById("delete");
+        alertdel.parentNode.removeChild(alertdel); // parentNode = Elternknoten --- removeChild = entferne Kind
+
+    </script>
+</body>
+</html>

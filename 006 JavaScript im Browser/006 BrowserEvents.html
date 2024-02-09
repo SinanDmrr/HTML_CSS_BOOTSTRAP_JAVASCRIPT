@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Browser Events</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .pHeadline{
+            font-weight: 700;
+            font-size: larger;
+        }
+
+        p, ol, div, img{
+            margin: 30px;
+        }
+
+        .alert{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            width: 500px;
+        }
+        .alertDanger{
+            background-color: #fa3200;
+            color: rgb(0, 0, 0);
+        }
+        .alertSucces{
+            background-color: #73e964;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<!--<body onscroll="alert('Bitte gehen Sie nicht')">-->
+<body>
+    <h1>JavaScript Browser Events</h1>
+    <br>
+    <br>
+    <br>
+    <button id="btn" class="btn">Press me</button>
+    <!-- Sobald man rein klickt ins Inputfeld also den Fokus setzt wird alert angezeigt also Dauerschleife solange wir drin sind -->
+    <!-- <input type="text" name="inputField" id="inputField" onfocus="alert('Jetzt muss du schreiben!')"> -->
+    <!-- Immer wenn sich im Textfeld was geändert hat und wir weg klicken -->
+    <input type="text" name="inputField" id="inputField" onchange="alert('Es wurde was geändert!')">
+
+    <ul style="width: 150px; border: 1px solid black;">
+        <li id="1" onclick="alert('Ich wurde geklickt!')">Click</li>
+        <li id="2" onscroll="alert('Ich wurde geklickt!')">Onscroll siehe Body</li>
+        <li id="3" onmouseenter="alert('Du bist auf mir weg da!')">Mouseenter</li> <!--Achtung Li elemente sind inline-->
+        <li id="4" onmouseleave="alert('Komm zurück, verlass mich nicht!')">Mouseleave</li>
+        <li id="5" onfocus="alert('Jetzt muss du schreiben!')">Focus siehe Input</li>
+        <li id="5" onchange="alert('Jetzt muss du schreiben!')">Change siehe Input</li>
+    </ul>
+    <div style=height:2000px></div>
+
+    <script>
+        "use-strict"
+        //Events
+        //Click
+
+
+        //Scroll
+
+
+        //Mouseenter
+
+
+        //Mouseleave
+
+
+        //Focus
+
+
+        //Change
+
+
+    </script>
+</body>
+</html>

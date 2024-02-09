@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElement und querySelector</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .pHeadline{
+            font-weight: 700;
+            font-size: larger;
+        }
+
+        p, ol, div, img{
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>getElement und querySelector</h1>
+    <div id="element1" class="elementClass1">Ich bin das Element 1</div>
+    <div id="element2" class="elementClass2">Ich bin das Element 2</div>
+    <p id="element3" class="elementClass3">Ich bin das Element 3</p>
+    <p id="element4" class="elementClass4">Ich bin das Element 4</p>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <script>
+        //Auf Element per ID zugreifen
+        let ele1 = document.getElementById("element1");
+        console.log(ele1);
+
+        //Auf Element per Class zugreifen
+        let ele2 = document.getElementsByClassName("elementClass2");
+        console.log(ele2);
+
+        //Auf Element per Tagname zugreifen (Greift auf alle Tags d.h. Ele3 und 4 werden angesprochen)
+        let ele3 = document.getElementsByTagName("p");
+        console.log(ele3);
+
+        //Auf Element per querySelector zugreifen
+        let ele4 = document.querySelector("ul > li:nth-child(1)");
+        console.log(ele4);
+        let ele5 = document.querySelector("ul > li:nth-child(2)");
+        console.log(ele5);
+    </script>
+</body>
+</html>

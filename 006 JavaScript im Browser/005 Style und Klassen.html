@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style und Klassen</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .pHeadline{
+            font-weight: 700;
+            font-size: larger;
+        }
+
+        p, ol, div, img{
+            margin: 30px;
+        }
+
+        .alert{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            width: 500px;
+        }
+        .alertDanger{
+            background-color: #fa3200;
+            color: rgb(0, 0, 0);
+        }
+        .alertSucces{
+            background-color: #73e964;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Style und Klassen</h1>
+    <br>
+    <br>
+    <br>
+    <div id="alert1" class="alert"><strong>Hallo!</strong> Ich bin ein Alert</div>
+    <div id="alert2" class="alert"><strong>Hallo!</strong> Ich bin ein Alert</div>
+    <p id="trenner">Ich bin einer Trenner</p>
+
+    <script>
+        "use-strict"
+        //Neues Element erzeugen -> Deklarieren und Initialisieren
+        let newAlert = document.createElement("div");
+        newAlert.className = "alert";
+        newAlert.innerHTML = "<strong>Hallo!</strong> Ich bin durch JavaScript erzeugt worden";        
+
+
+        //NICHT NUTZEN NUR WENN ALLES ANDERE NICHT GEHT: Style bearbeiten ohne Class
+        trenner.style.color = "red";
+        trenner.style.backgroundColor = "yellow";
+        trenner.style.width = "500px";
+
+
+        // NUTZ DIES IMMER !!!
+        //Style bearbeiten mit Class -> Andere Class zuweisen Danger und Succes -> DIESEN WEG ANGEWÖHNEN
+        let alert1 = document.getElementById("alert1");
+        alert1.className = "alertDanger";        
+
+        // Kombination aus 2 Classen -> Main Class und Spezialisierung (Kind) -> d.h. man kann für alle divs z.B.
+            // ein Allgemeines Style erstellen was für alle gilt und alles was Spezieller ist in weiter klassen auslagern
+        let alert2 = document.getElementById("alert2");
+        alert2.className = "alert alertSucces"  // Combination aus alert und alertSucces
+        
+        // Anstatt className kann man auch classList nutzen, hierbei bearbeitet man die Classlist (ADD, REMOVE)
+        //alert2.classList.add("alert-danger"); //-> Fügt weitere Klasse der Liste hinzu
+        //alert2.classList.remove("alert-danger"); // -> Entfernt angegebene Klassen aus der Liste
+        //alert2.classList.toggle("alert-danger"); // -> ist wie das ! es Negiert als macht das gegenteil (AN/AUS - AUS/AN)
+        
+        // Um zu Checken ob ein Objekt eine bestimmte Klasse hat nutzt man "contains()"
+        let check = alert2.classList.contains("alertDanger"); // -> FALSE
+        alert(check);
+    </script>
+</body>
+</html>

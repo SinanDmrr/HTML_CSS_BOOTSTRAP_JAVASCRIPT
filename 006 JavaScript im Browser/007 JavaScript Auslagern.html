@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Auslagern</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .pHeadline{
+            font-weight: 700;
+            font-size: larger;
+        }
+
+        p, ol, div, img{
+            margin: 30px;
+        }
+
+        .alert{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            width: 500px;
+        }
+        .alertDanger{
+            background-color: #fa3200;
+            color: rgb(0, 0, 0);
+        }
+        .alertSucces{
+            background-color: #73e964;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<!--<body onscroll="alert('Bitte gehen Sie nicht')">-->
+<body>
+    <h1>JavaScript Auslagern</h1>
+    <br>
+    <br>
+    <br>
+    
+
+    <!-- 
+        <script>
+        "use-strict"
+        alert("HEY");
+    </script> -->
+    <!-- Ruft nun über die Source die JS Datei auf anstatt den JS Code ins HTML zu schreiben -->
+    <script src="./auslagerung.js" type="text/javascript"></script> 
+</body>
+</html>
