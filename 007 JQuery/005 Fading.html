@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Fading</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        button{
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: large;
+            margin-right: 20px;
+        }
+        .cube{
+            width: 300px;
+            height: 300px;
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fading</h1>
+    <button id="hide" type="button">HIDE!</button>
+    <button id="show" type="button">SHOW</button>
+    <button id="toggle" type="button">TOGGLE</button>    
+    <br>
+    <br>
+    <div id="color" class="cube"></div>
+
+    <script type = "text/javascript">
+        "use-strict"        
+        $(function(){
+            // ONCLICK des HIDE Buttons
+            $('#hide').on("click",function(){
+                // Selektor des Würfels was AUSGEFADET werden soll auf OnClick des Buttons!
+                $("#color").fadeOut();  //Default duration also Dauer des Fadens sind 400 ms 
+            })
+
+            // ONCLICK des SHOW Buttons
+            $('#show').on("click",function(){
+                // Selektor des Würfels was EINGEFADET werden soll auf OnClick des Buttons!
+                $("#color").fadeIn(1000); //Anstatt den default von 400ms zu nutzen nutzen wir nun 1000ms -> 1s
+            })
+
+            // ONCLICK des TOGGLE Buttons
+            $('#toggle').on("click",function(){
+                // Selektor des Würfels was EIN UND AUSGEFADET werden soll auf OnClick des Buttons!
+                $("#color").fadeToggle();
+            })
+        })
+    </script>
+</body>
+</html>
