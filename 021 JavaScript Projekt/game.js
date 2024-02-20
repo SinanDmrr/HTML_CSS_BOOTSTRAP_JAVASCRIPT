@@ -33,6 +33,23 @@ function pickColor(){
     return colors[pickColor];
 }
 
+function pruefeSpiel(clickedColor, element){
+    // Überprüfen, ob die ausgewählte Farbe korrekt ist (ersetze dies durch deine Logik)
+    if (searchingRgbCode === clickedColor) {
+        alert(`RICHTIG!`);
+        // Nicht mehr weiter klickbar machen -> Click Event entfernen
+        $(".square").off("click");
+        // Seite neu laden
+        location.reload();
+    } else {
+        alert(`Leider Falsch, versuch es noch einmal!\nGesuchte Zahl: ${searchingRgbCode}\nDeine Zahl: ${clickedColor}`);
+        //$(this).remove(); // Löscht das Square
+        // Ändert den Background in die Body Background
+        $(element).css({   //This bezieht sich auf das geklickte element
+            backgroundColor: "#232323"
+        })
+    }        
+}
 
 // Durch die Schleife den Squars die Farben geben aus dem Colors-Array
 for (let element = 0; element < square.length; element++){
@@ -40,17 +57,22 @@ for (let element = 0; element < square.length; element++){
     // Squars Klickbar machen
     $(square[element]).on("click", function(){
         let clickedColor = colors[element];
-        // Überprüfen, ob die ausgewählte Farbe korrekt ist (ersetze dies durch deine Logik)
-        if (searchingRgbCode === clickedColor) {
-            alert(`RICHTIG!`);
-        } else {
-            alert(`Leider Falsch, versuch es noch einmal!\nGesuchte Zahl: ${searchingRgbCode}\nDeine Zahl: ${clickedColor}`);
-            //$(this).remove(); // Löscht das Square
-            // Ändert den Background in die Body Background
-            $(this).css({   //This bezieht sich auf das geklickte element
-                backgroundColor: "#232323"
-            })
-        }        
+        pruefeSpiel(clickedColor, this);
+        // // Überprüfen, ob die ausgewählte Farbe korrekt ist (ersetze dies durch deine Logik)
+        // if (searchingRgbCode === clickedColor) {
+        //     alert(`RICHTIG!`);
+        //     // Nicht mehr weiter klickbar machen -> Click Event entfernen
+        //     $(".square").off("click");
+        //     // Seite neu laden
+        //     location.reload();
+        // } else {
+        //     alert(`Leider Falsch, versuch es noch einmal!\nGesuchte Zahl: ${searchingRgbCode}\nDeine Zahl: ${clickedColor}`);
+        //     //$(this).remove(); // Löscht das Square
+        //     // Ändert den Background in die Body Background
+        //     $(this).css({   //This bezieht sich auf das geklickte element
+        //         backgroundColor: "#232323"
+        //     })
+        // }        
     })
 }
 
