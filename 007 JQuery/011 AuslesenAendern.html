@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JQUERY einbinden-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Auslesen/Aendern</title>
+
+    <style>
+        p{
+            font-size: 30px;
+        }        
+    </style>
+</head>
+<body>
+    <h1>Auslesen</h1>
+    <button id="readText">Text auslesen</button>
+    <button id="readHTML">HTML auslesen</button>
+    <button id="attr">Attribut auslesen</button>
+    <p id="paragraph"><b>Hey</b> Ich bin ein <i>Paragraph</i></p>
+    <br>
+
+    <input type="text" name="postInput" id="userinput" placeholder="Insert your Input">
+    <button id="post" type="submit">POST</button> 
+    <br>
+
+    <h1>Auslesen</h1>
+    <button id="setText">Text ändern</button>
+    <button id="setHTML">HTML ändern</button>
+    <button id="setPost" type="submit">Set-POST-Value</button> 
+    <button id="setAttr">Attribut ändern</button>
+
+    <script type="text/javascript">
+        "use-strict"
+        $(function(){
+            //Text auslesen (Paragraph Inhalt)
+            $("#readText").on("click",function(){
+                alert($("#paragraph").text());  // ID des Paragraphen + .text() holt den Inhalt daraus 
+            })
+            //HTML auslesen (Paragraph Inhalt)
+            $("#readHTML").on("click",function(){
+                alert($("#paragraph").html());  // ID des Paragraphen + .html() holt den HTML aufbau 
+            })
+            //Userinput / Value auslesen
+            $("#post").on("click", function(){
+                alert($("#userinput").val())    //val() = VALue also der Wert aus dem Input
+            })
+            //Attribute auslesen
+            $("#attr").on("click",function(){
+                alert($("#userinput").attr("name"));  // ID des Inputfeldes 
+            })
+
+
+            //Text ändern (Paragraph Inhalt)
+            $("#setText").on("click",function(){
+                $("#paragraph").text("Neuer Text");  // ID des Paragraphen + .text("NEUER TEXT") setzt neuen Text in den Paragraphen
+            })
+            //HTML ändern (Paragraph Inhalt)
+            $("#setHTML").on("click",function(){
+                $("#paragraph").html("<b>ICH BIN FETT GEDRUCKT</b>");  // ID des Paragraphen + .html("<b>ICH BIN FETT GEDRUCKT</b>") setzt neuen HTML in den Paragraphen
+            })
+            //Userinput ändern
+            $("#setPost").on("click", function(){
+                $("#userinput").val("Deine Eingabe war: 42")    //val() = VALue also der Wert aus dem Input
+            })
+            //Attribute ändern
+            $("#setAttr").on("click",function(){
+                $("#userinput").attr("name",  "neuerName");  // ID des Inputfeldes 
+            })
+        })
+    </script>
+</body>
+</html>

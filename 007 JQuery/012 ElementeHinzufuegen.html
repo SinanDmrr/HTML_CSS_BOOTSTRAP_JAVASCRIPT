@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JQUERY einbinden-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Elemente hinzufügen</title>
+
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Elemente hinzufügen</h1>
+    <p id="or">-----An mir wird sich Orientiert-----</p>
+    
+    <script type="text/javascript">
+        "use-strict"
+        $(function(){
+            // die ID des Paragraphen in eine Variable Speichern für Übersichtlichkeit
+            let paragraphID = $("#or");
+            /*
+            Anstatt:    $("#or").prepend("<h2>H2 Überschrift -> PREPEND</h2>")
+            Wird nun:   $(paragraphID).prepend("<h2>H2 Überschrift -> PREPEND</h2>")*/
+            
+            //VOR meinen Paragraphen ein neues Element hinzufügen -> Prepend
+            $(paragraphID).prepend("<h2>H2 Überschrift -> PREPEND</h2>")
+
+            //NACH meinem Paragraphen ein neues Element hinzufügen -> append
+            $(paragraphID).append("<h3>H3 Überschrift -> APPEND</h3>")
+
+            //BEVOR ALLEN ANDEREN ELEMENTEN vor dem Paragraphen ein neues Element hinzufügen -> before
+            $(paragraphID).before("<h6>H6 Überschrift -> BEFORE</h6>")
+
+            //NACH ALLEN ANDEREN ELEMENTEN vor dem Paragraphen ein neues Element hinzufügen -> after
+            $(paragraphID).after("<h5>H5 Überschrift -> AFTER</h5>")
+        })
+    </script>
+</body>
+</html>

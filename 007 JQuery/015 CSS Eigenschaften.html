@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JQUERY einbinden-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>CSS Eigenschaften</title>
+
+    <style>
+        .one{
+            font-size: xx-large;
+            background-color: #f6d8b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Eigenschaften</h1>
+    <h3 id="ele1" class="one">Ich diene zur Unterhaltung</h3>
+    <h3 id="ele2">Ich diene zur Unterhaltung</h3>
+    <h3 id="ele3">Ich diene zur Unterhaltung</h3>
+    <h3 id="ele4">Ich diene zur Unterhaltung</h3>
+    <h3 id="ele5">Ich diene zur Unterhaltung</h3>
+
+    <button id="1">Eigenschaft auslesen</button>
+    <button id="2">CSS hinzufügen</button>
+    <button id="3">CSS für mehrere Objekte</button>
+    
+    <script type="text/javascript">
+        "use-strict"
+        $(function(){
+            // CSS-Eigenschaft auslesen
+            $("#1").on("click", function(){
+                alert($("#ele1").css("background-color"));
+            })
+            // CSS-Eigenschaft hinzufügen
+            $("#2").on("click", function(){
+                $("#ele2").css({
+                    //CamelCase Schreibweise nutzen -> font-size = fontSize:, background-color = backgroundColor:
+                    backgroundColor: "green",
+                    color: "white",
+                    fontSize: "40px"
+                });
+            })
+            // CSS-Eigenschaften für mehrere Objekte hinzufügen
+            $("#3").on("click", function(){
+                $("#ele3").css({
+                    //CamelCase Schreibweise nutzen -> font-size = fontSize:, background-color = backgroundColor:
+                    backgroundColor: "red",
+                    color: "black",
+                    fontSize: "20px"
+                });
+                $("#ele4").css({
+                    //CamelCase Schreibweise nutzen -> font-size = fontSize:, background-color = backgroundColor:
+                    backgroundColor: "blue",
+                    color: "yellow",
+                    fontSize: "30px"
+                });
+                $("#ele5").css({
+                    //CamelCase Schreibweise nutzen -> font-size = fontSize:, background-color = backgroundColor:
+                    backgroundColor: "black",
+                    color: "white",
+                    fontSize: "40px"
+                });
+            })
+
+        })
+    </script>
+</body>
+</html>

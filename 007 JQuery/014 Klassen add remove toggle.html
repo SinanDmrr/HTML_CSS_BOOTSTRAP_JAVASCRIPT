@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JQUERY einbinden-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Klassen add remove toggle</title>
+
+    <style>
+        .one{
+            font-size: xx-large;
+            background-color: #f6d8b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Klassen add remove toggle</h1>
+    <h3 id="ele1">Ich diene zur Unterhaltung</h3>
+
+    <button id="addC">Add Class</button>
+    <button id="removeC">Remove Class</button>
+    <button id="toggleC">Toggle Class</button>
+    
+    <script type="text/javascript">
+        "use-strict"
+        $(function(){
+            //ADD
+            $("#addC").on("click", function(){
+                $("#ele1").addClass("one");
+            })
+            //REMOVE
+            $("#removeC").on("click", function(){
+                $("#ele1").removeClass("one");
+            })
+            //TOGGLE
+            $("#toggleC").on("click", function(){
+                $("#ele1").toggleClass("one");
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>Chaining</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        button{
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: large;
+            margin-right: 20px;
+        }
+        .cube{
+            width: 300px;
+            height: 300px;
+            background-color: cadetblue;
+            /* Position Relativ damit man es animieren kann, sodass es sich Relativ auf der HTML Seite bewegen kann */
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Chaining / Verketten von Methoden</h1>
+    <button id="reset" type="button"><a href="">Reset</a></button>  <!--href nach nirgendwo somit lädt er die Seite neu-->
+    <button id="start" type="button">Start</button>
+    <button id="stop" type="button">Stop</button>
+    <br>
+    <br>
+    <div id="color" class="cube"></div>
+
+    <script type = "text/javascript">
+        "use-strict"        
+        $(function(){
+            $("#stop").on("click", function(){
+                // 1.Funktion -> ClearQueue
+                // 2.Funktion -> JumpToEnd
+                $("#color").stop(false,false).fadeOut(1000).fadeIn(1000) // Chaining also VERKETTEN von Methoden aneinander ".stop().fadeOut()"
+            })
+
+            $("#start").on("click", function(){
+                $("#color").animate({
+                    /*CSS ANIMATION DEFINIEREN*/
+                    opacity: 0.25,
+                    left: "300px",
+                }, 
+                //Duration / Dauer
+                3000,
+                //CALLBACK FUNCTION!!!
+                function(){
+                    // Automatisches Reseten, wenn das ENDE der Animation erreicht ist
+                    window.location.reload();
+                } )
+                //WICHTIG: 
+                //Würden wir die Funktion hier hin schreiben also einfach nach die Animation Funktion dann würde man 
+                //Ja denken okay weil es danach kommt wird es danach ausgeführt ABER NEIN so ist es nicht denn JS
+                //Führt den Code sofort aus d.h. Während die ANimation noch läuft wird die nächste FUnktion gestartet
+                //Sodass bei einem Alert z.B. dieser während der Animation angezeigt wird.
+            })
+
+            
+        })
+    </script>
+</body>
+</html>
