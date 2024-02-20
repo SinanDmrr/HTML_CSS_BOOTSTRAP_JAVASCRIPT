@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Game</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+  <h1 id="gameheader">
+    Suche die Farbe
+    <br>
+    <span id="rgbCode">RGB</span>
+    <br>
+  </h1>
+
+  <div id="stripe">
+    <button id="reset">New Colors</button>
+    <span id="message"></span>
+    <button id="easyBTN" class="" value="3">Easy</button>
+    <button id="normalBTN" class="selected">Normal</button>
+    <button id="hardBTN" class="">Hard</button>
+  </div>
+
+  <div class="container">
+    <div class="items">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+  </div>
+
+<script src="game.js" type="text/javascript"></script>
+
+</body>
+</html>
