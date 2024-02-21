@@ -74,4 +74,16 @@ button:hover {
     padding: 20px;
 }
 
+#punktestand{
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#punkte{
+    font-size: 100px;
+}
+
 
