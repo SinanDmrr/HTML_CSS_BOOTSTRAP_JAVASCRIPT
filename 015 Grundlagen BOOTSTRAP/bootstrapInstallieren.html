@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Starter Template</title>
+    <!-- Bootstrap CSS 
+        Mit Bootstrap kann man vordefinierte Styles von anderen Usern in seinem Projekt nutzen
+        ohne selbst die CSS Styles zu entwerfen. Dies ist von Vorteil für Webseiten die keine
+        Customization / Kundeneigene Interessen einbinden muss so kann man sich schon vordefinierte
+        z.B. NavBars aussuchen und in sein Projekt einfügen und dann diese anpassen-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        
+        .container-test{
+            height: 50px;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello, World!</h1>
+
+    <h3>Container</h3>
+    <br>
+    <!-- Um Bootstrapelemente anzusprechen muss man Classen ansprechen 
+            BOOTSTRAP Klasse: container  & Eigene Klasse: container-test
+            container-sm -md -lg usw. kümmern sich um die Responsivität des Containers
+            unter "https://getbootstrap.com/docs/5.3/layout/containers/#default-container"
+            kann man die Docs von Bootstrap ein sehen und schauen was es für Klassen gibt
+            die man für seine Projekte nutzen kann-->
+    <div id="container1" class="container container-test">
+        <h3>Ich bin auch ein Container</h3>
+    </div>
+    <div id="container2" class="container-sm container-test">
+        <h3>Ich bin auch ein Container</h3>
+    </div>
+    <div id="container3" class="container-md container-test">
+        <h3>Ich bin auch ein Container</h3>
+    </div>
+    <div id="container4" class="container-lg container-test">
+        <h3>Ich bin auch ein Container</h3>
+    </div>
+    <div id="container5" class="container-xl container-test">
+        <h3>Ich bin auch ein Container</h3>
+    </div>
+    <div id="container6" class="container-xxl container-test">
+        <h3>Ich bin auch ein Container</h3>
+    </div>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
